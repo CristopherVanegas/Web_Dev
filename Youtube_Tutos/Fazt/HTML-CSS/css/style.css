@@ -1,0 +1,21 @@
+/*
+    SELECTORS:
+    -> HTML element
+    -> ID
+    -> Class
+*/
+
+/*HTML ELEMENT*/
+body {
+    background-color:rgb(67, 175, 175);
+}
+
+/*ID*/
+#header_1 {
+    color:aliceblue;
+}
+
+/*Class*/
+.sec {
+    text-align:right;
+}
