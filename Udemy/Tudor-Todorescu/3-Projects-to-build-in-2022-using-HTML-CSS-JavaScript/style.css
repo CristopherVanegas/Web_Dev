@@ -13,3 +13,16 @@ body {
     overflow: hidden;
     margin: 0;
 }
+
+/* This .loading-wrapper{} selects the first <div> and centers with a white background */
+.loading-wrapper {
+     width:100%;
+     background:white;
+     position:fixed;
+     display:flex;
+}
+
+/* This .loading-wrapper{} selects the <img> and sets the margin to 0 and centers automatically */
+.loading-wrapper img {
+    margin: 0 auto;
+}
