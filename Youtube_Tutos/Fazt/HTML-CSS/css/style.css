@@ -5,17 +5,20 @@
     -> Class
 */
 
-/*HTML ELEMENT*/
+
+/*HTML ELEMENT
 body {
     background-color:rgb(67, 175, 175);
 }
+/*
 
-/*ID*/
+/*ID
 #header_1 {
     color:aliceblue;
 }
-
-/*Class*/
+*/
+/*Class
 .sec {
     text-align:right;
 }
+*/
