@@ -22,62 +22,23 @@ header, section, footer, aside, nav, article {
    /*border: 1px width & solid color & black color*/
 }
 
+#header_1 h1{
+    border: 1px solid black;
+    text-align:center;
+    padding:20px;
+    margin:auto;
+    background-color:rgba(169, 219, 240, 0.695);
+}
+
+#header_1 h2 {
+    align-items:center;
+}
+
 .menu li {
     list-style:none; /* Deletes the bullets and any style for <li> elementes */
     border:1px solid black; /* border style */
     display:inline-block; /* To specify the order of the <li> elements to be inline-block */
     font:bold 14px verdana; /* Text style */
-    padding:5px; /* This is for the space in the box */
+    padding:5px; /* This is for the space in the box */    
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*JUST FOR PRATICE*/
-
-/*
-    SELECTORS:
-    -> HTML element
-    -> ID
-    -> Class
-*/
-
-
-/*HTML ELEMENT
-body {
-    background-color:rgb(67, 175, 175);
-}
-/*
-
-/*ID
-#header_1 {
-    color:aliceblue;
-}
-*/
-/*Class
-.sec {
-    text-align:right;
-}
-*/
