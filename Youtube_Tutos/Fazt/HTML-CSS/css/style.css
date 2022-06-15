@@ -22,7 +22,13 @@ header, section, footer, aside, nav, article {
    /*border: 1px width & solid color & black color*/
 }
 
-
+.menu li {
+    list-style:none; /* Deletes the bullets and any style for <li> elementes */
+    border:1px solid black; /* border style */
+    display:inline-block; /* To specify the order of the <li> elements to be inline-block */
+    font:bold 14px verdana; /* Text style */
+    padding:5px; /* This is for the space in the box */
+}
 
 
 
