@@ -28,7 +28,7 @@ header, section, footer, aside, nav, article {
 }
 
 .agrupar {
-    width: 90%; /* Width for the webpage */
+    width: 70%; /* Width for the webpage */
     margin: 15px auto; /* To center the content */
 }
 
@@ -45,6 +45,11 @@ header, section, footer, aside, nav, article {
 .header_1 h2 {
     padding-top: 20px;
     padding-bottom: 30px;
+}
+
+.sec {
+    width: 60%;
+    float: left;
 }
 
 .menu {
@@ -72,4 +77,12 @@ header, section, footer, aside, nav, article {
     width: 50%;
 }
 
+.aside {
+    width: 20%;
+    float: left;
+}
+
+.footer {
+    clear: both;
+}
 
