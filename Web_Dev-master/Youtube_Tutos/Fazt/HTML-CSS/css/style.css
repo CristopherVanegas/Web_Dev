@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font: bold 30px sans-serif;
+    /* -- It's the same as above --
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    */
+}
+
+h2 {
+    font: bold 24px sans-serif;
+    /* -- It's the same as above --
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    */
+}
+
+header, section, footer, aside, nav, article {
+    display: block;
+    border: 1px solid black;
+   /*border: 1px width & solid color & black color*/
+}
+
+/*
+.time {
+    text-align: right;
+    color: gray;
+    border: 1px solid black;
+    margin-left: 600px; 
+}
+*/
+
+.agrupar {
+    width: 90%; /* Width for the webpage */
+    margin: 15px auto; /* To center the content */
+}
+
+.agrupar time {
+    text-align: right;
+    color: gray;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.header_1 h1, h2{
+    text-align: center;
+    background-color: #443742;
+    color: white;
+}
+
+.header_1 h1 {
+    padding-top: 30px;
+}
+
+.header_1 h2 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.menu {
+    background: #5E4C5A;
+    padding: 5px;
+    text-align: center;
+}
+
+.menu li {
+    list-style: none; /* Deletes the bullets and any style for <li> elementes */
+    background: white; /* White color for background */
+    border-radius: 25px; /* The border radiuos for a non-rectangle look */
+    padding: 5px 20px; /* This is for the space in the box */ 
+    margin: 3px 5px;
+    font: bold 14px verdana; /* Text style */
+    display: inline-block; /* To specify the order of the <li> elements to be inline-block */
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.html_structure_list {
+    border: 1px solid black;
+    margin: 10px;
+    list-style: none;
+}
+
+.html_structure_list li {
+    list-style: none;
+}
+
+.picture {
+    width: 50%;
+}
+
+
