@@ -27,6 +27,10 @@ header, section, footer, aside, nav, article {
    /*border: 1px width & solid color & black color*/
 }
 
+.html_structure {
+    list-style: none;
+}
+
 .agrupar {
     width: 90%; /* Width for the webpage */
     margin: 15px auto; /* To center the content */
