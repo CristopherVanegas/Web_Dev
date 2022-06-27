@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    list-style: none;
+    font-family: sans-serif;
 }
 
 h1 {
@@ -25,6 +27,7 @@ header, section, footer, aside, nav, article {
     display: block;
     border: 1px solid black;
    /*border: 1px width & solid color & black color*/
+   background: #F8F7F9;
 }
 
 .time {
@@ -93,8 +96,12 @@ header, section, footer, aside, nav, article {
 }
 
 .aside {
-    width: 20%;
-    float: left;
+    width: 30%;
+    padding: 5px;
+    margin: 15px auto;
+    float: right;
+    background: #F8F7F9;
+    
 }
 
 .footer {
