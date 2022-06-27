@@ -42,11 +42,7 @@ header, section, footer, aside, nav, article {
     padding-right: 10px;
 }
 
-.html_structure {
-    list-style: none;
-}
-
-.agrupar {
+.content {
     width: 70%; /* Width for the webpage */
     margin: 15px auto; /* To center the content */
 }
