@@ -27,6 +27,25 @@ header, section, footer, aside, nav, article {
    /*border: 1px width & solid color & black color*/
 }
 
+.time {
+    /*
+    This class into the DIV lets to align the content "time" to the right
+    by adding a text-align:right;
+    Finally added a color gray to the text and added a series of padding config.
+    */
+    
+    /* border: 1px solid black; */
+    color: gray;
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+
+.html_structure {
+    list-style: none;
+}
+
 .agrupar {
     width: 70%; /* Width for the webpage */
     margin: 15px auto; /* To center the content */
