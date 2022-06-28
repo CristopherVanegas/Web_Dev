@@ -5,6 +5,10 @@
     font-family: sans-serif;
 }
 
+body {
+    background: #EDE8EC; /* Background color for body! */
+}
+
 h1 {
     font: bold 30px sans-serif;
     /* -- It's the same as above --
@@ -55,6 +59,7 @@ header, section, footer, aside, nav, article {
 }
 
 .content {
+    background: #F8F7F9;
     border: 1px solid black;
     width: 70%; /* Width for the webpage */
     margin: 15px auto; /* To center the content */
@@ -124,16 +129,19 @@ header, section, footer, aside, nav, article {
 }
 
 .aside {
-    width: 30%;
+    border: 1px solid black;
+    background: #F8F7F9;
     padding: 5px;
     margin: 10px;
+    width: 30%;
     float: right;
-    background: #F8F7F9;
-    border: 1px solid black;
 }
 
 .footer {
-    clear: both;
     text-align: center;
+    background: #443742;
+    color: white;
+    font: bold verdana;
+    clear: both;
 }
 
