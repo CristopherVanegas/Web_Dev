@@ -124,7 +124,14 @@ header, section, footer, aside, nav, article {
     color: black;
 }
 
+figure {
+    text-align: center;
+}
+
 .picture {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     width: 50%;
 }
 
