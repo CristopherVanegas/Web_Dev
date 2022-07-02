@@ -1,8 +1,5 @@
-h2 {
-    color: red;
-    border: 1px solid black;
-}
-
 h1 {
-    color: blue;
+    color: crimson;
+    font-size: 60px;
+    text-align: center;
 }
