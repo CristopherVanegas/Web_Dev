@@ -1,9 +1,20 @@
+* {
+    color: blue;
+}
 
+/* ID selected */
+#title {
+    color: steelblue;
+    text-align: center;
+}
+
+/* CLASS and ID selected */
 .titulo, #titulo {
     color: red;
     border: 1px solid black;
 }
 
+/* CLASS selected */
 .negrita {
     font-weight: bold;
 }
