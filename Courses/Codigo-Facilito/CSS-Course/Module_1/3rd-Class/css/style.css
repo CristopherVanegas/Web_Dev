@@ -1,20 +1,45 @@
+/* UNIVERSAL SELECTOR */
 * {
     color: blue;
 }
 
+
 /* ID selected */
+/* SPECIFIC SELECTOR - ID */
 #title {
     color: steelblue;
     text-align: center;
 }
 
 /* CLASS and ID selected */
+/* DESCENDANTS COMBINER SELECTOR - CLASSES*/
 .titulo, #titulo {
     color: red;
     border: 1px solid black;
 }
 
 /* CLASS selected */
+/* SPECIFIC SELECTOR - CLASS*/
 .negrita {
     font-weight: bold;
+}
+
+
+/* SELECTS any .titulo Class INSIDE .abuelito */
+/* DESCENDANTS COMBINER SELECTOR - CLASSES */
+.abuelito .titulo {
+    color: red;
+    font-size: 40px;
+}
+
+/* SELECTS any .titulo Class INSIDE .padre Class */
+/* DESCENDANTS COMBINER SELECTOR - CLASSES */
+.padre .titulo {
+    color: green;
+}
+
+/* SELECTS any .titulo class DIRECTLY INSIDE .abuelito Class */
+/* DIRECT CHILDREN COMBINER */
+.abuelito>.titulo {
+    color: purple;
 }
