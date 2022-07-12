@@ -103,6 +103,15 @@ header, section, footer, aside, nav, article {
     border-top-right-radius: 15px;          /* ADDED border radious top right */
 }
 
+.subtitles {
+    border-radius: 15px;;
+    margin: 10px;
+    padding: 10px;
+    background-color: #443742;
+    color: white;
+    text-align: center;
+}
+
 .menu {
     background: #5E4C5A;
     padding: 5px;
@@ -136,6 +145,7 @@ figure {
 
 .aside {
     border: 1px solid black;
+    border-radius: 15px;
     background: #F8F7F9;
     padding: 5px;
     margin: 10px;
@@ -149,5 +159,13 @@ figure {
     color: white;
     font: bold verdana;
     clear: both;
+}
+
+.meta_char_list {
+    padding-left: 15px;
+}
+
+.meta_char_list li {
+    list-style-type:disc;
 }
 
