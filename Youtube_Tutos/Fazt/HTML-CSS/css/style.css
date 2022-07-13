@@ -153,12 +153,30 @@ figure {
     float: right;
 }
 
+.section_footer {
+    border: 1px solid black; 
+    border-radius: 8px;
+    margin-top: 16px;
+    padding: 4px;
+    text-align: center;
+    color: black;
+}
+
 .footer {
     text-align: center;
     background: #443742;
     color: white;
     font: bold verdana;
     clear: both;
+}
+
+.link {
+    text-align: center;
+    margin: 18px auto;
+}
+
+.link>a {
+    color: black;
 }
 
 .meta_char_list {
