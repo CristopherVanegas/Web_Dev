@@ -128,6 +128,25 @@ header, section, footer, aside, nav, article {
     display: inline-block; /* To specify the order of the <li> elements to be inline-block */
 }
 
+.list_of_basic_labels {
+    /*border: 1px solid black;*/
+    padding: 8px;
+}
+
+.list_of_basic_labels>ul {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.list_of_basic_labels>ul>li{
+    list-style:disc;
+}
+
+.list_of_basic_labels>ul>li>.p {
+    font-size: 14px;
+}
+
 .menu a {
     text-decoration: none;
     color: black;
