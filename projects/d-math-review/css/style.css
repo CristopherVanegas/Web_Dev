@@ -1,0 +1,74 @@
+.content {
+    border: 1px solid black;
+    border-radius: 8px;
+    /* border-radius: 5px; */
+    width: 60%
+}
+
+.content {
+    margin: 15px auto;
+    padding: 16px;
+    width: 70%;
+    align-content: center;
+}
+
+.content>main>header>h1 {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.content>main>section>h2 {
+    text-align: center;
+}
+
+.sarrus-m-for-2x2-3x3 {
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 8px;
+    float: left;
+    
+    clear: both;
+}
+
+.crammer-method {
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 8px;
+    float: right;
+    
+    clear: both;
+}
+
+.det-4x4-gauss {
+    /* margin: 8px; */
+    clear: both;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 8px;
+    float: left;
+
+    clear: both;
+}
+
+.min-max {
+    /* margin: 8px */
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 8px;
+    float: right;
+
+    clear: both;
+}
+
+.footer {
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-top: 32px;
+    padding: 4px;
+    text-align: center;
+
+    clear: both;
+}
+
