@@ -156,13 +156,12 @@ header, section, footer, aside, nav, article {
     border: 1px solid black;
     border-radius: 8px;
     padding: 8px;
-    margin: 8px;
+    margin: 16px;
 }
 
 .html_structure>h4 {
     border: 1px solid black;
     border-radius: 8px;
-    margin: 4px;
     padding: 4px;
     text-align: center;
 }
