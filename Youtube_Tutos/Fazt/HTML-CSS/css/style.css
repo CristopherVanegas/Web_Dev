@@ -135,13 +135,14 @@ header, section, footer, aside, nav, article {
 
 .list_of_basic_labels {
     /*border: 1px solid black;*/
-    padding: 8px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 8px auto;
+    width: 47%;
 }
 
 .list_of_basic_labels>ul {
-    border: 1px solid black;
-    border-radius: 8px;
-    padding: 24px;
+    margin: 24px;
 }
 
 .list_of_basic_labels>ul>li{
