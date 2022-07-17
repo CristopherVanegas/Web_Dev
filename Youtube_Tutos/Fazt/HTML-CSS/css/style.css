@@ -134,11 +134,11 @@ header, section, footer, aside, nav, article {
 }
 
 .list_of_basic_labels {
-    /*border: 1px solid black;*/
     border: 1px solid black;
     border-radius: 8px;
     margin: 8px auto;
-    width: 47%;
+    margin-bottom: 32px;
+    width: 41%;
 }
 
 .list_of_basic_labels>ul {
@@ -153,11 +153,19 @@ header, section, footer, aside, nav, article {
     font-size: 14px;
 }
 
+.html_structure_wrapper {
+    /* border: 1px solid black; */
+    /* border-radius: 8px; */
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
 .html_structure {
     border: 1px solid black;
     border-radius: 8px;
     padding: 8px;
-    margin: 16px;
+    margin: auto;
+    width: 50%;
 }
 
 .html_structure>h4 {
@@ -175,7 +183,7 @@ header, section, footer, aside, nav, article {
 }
 
 .html_structure>li {
-    list-style:disc;
+    list-style:inside;
 }
 
 
