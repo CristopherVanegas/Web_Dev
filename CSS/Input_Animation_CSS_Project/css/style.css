@@ -97,7 +97,7 @@ body {
 
 .form-control input:focus + label span,
 .form-control input:valid + label span {
-    color: lighblue;
+    color: rgb(255, 255, 255);
     transform: translateY(-30px);
 }
 
