@@ -1,0 +1,14 @@
+.circle {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 50px;                   /* 50px HEIGHT */
+    width: 50px;                    /* 50px WIDTH */
+    border-radius: 50%;             /* 50% Border-Radius to create a circle */
+    border: 2px solid #303346;    /* ADDED A 2px Border with a solid color #303346*/
+    transition: transform 0.10s;    /* ADDED a TRANSITION time of 0.10secs for the animation */
+}
+
+.circle.active {
+    transform: translate(-50%, -50%) scale(0.5);    /* TRANSFORM the circle into -50% for each heigh and width in a scale of 0.5
+                                                        FOR MORE READ the 'transform: ' documentation */
+}
