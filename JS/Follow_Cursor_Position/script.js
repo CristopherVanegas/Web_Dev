@@ -5,5 +5,9 @@ const moveCircle = (e) => {
 }
 
 const addPulse = () => {
-    
+    circle.classList.toggle('active');
 }
+
+window.addEventListener('mousemove', moveCircle);   // THIS READS THE MOUSE MOVE AND APPLY THE moveCircle function when a event is been listening.
+window.addEventListener('mousedown', addPulse);     // THIS READS 
+//window.addEventListener('mouseup', addPulse);
