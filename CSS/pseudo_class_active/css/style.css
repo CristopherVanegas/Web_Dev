@@ -5,6 +5,14 @@
     border-radius: 4px;
 }
 
+.title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    font-family: verdana;
+}
+
 .content {
     padding: 50px;
     text-align: center;
