@@ -33,7 +33,24 @@
         // COMBATE
         if (pc == jugador) {
             alert('EMPATE')
+        } 
+        // FIRST WIN SCENERY
+        else if (jugador == 1 && pc == 3) {
+            alert('GANASTE')
         }
+        // SECOND WIN SCENERY
+        else if (jugador == 2 && pc == 1) {
+            alert('GANASTE')
+        }
+        // THIRD WIN SCENERY
+        else if (jugador == 3 && pc == 2) {
+            alert('GANASTE')
+        }
+        // LOST SCENERY
+        else {
+            alert('PERDISTE')
+        }
+
 
 
     </script>
