@@ -19,6 +19,19 @@ function eleccion(jugada) {
     return resultado;
 }
 
+function combate() {
+    // COMBATE
+    if (pc == jugador) {
+        alert('EMPATE')
+    } else if ((jugador == 1 && pc == 3) || (jugador == 2 && pc == 1) || (jugador == 3 && pc == 2)) {   // FIRST, SECOND AND THIRD WIN SCENERY IN JUST ONE CONDITION
+        alert('GANASTE')
+        triunfos = triunfos + 1;
+    } else {    // LOST SCENERY
+        alert('PERDISTE')
+        perdidas = perdidas + 1;
+    }
+}
+
 
 // 1 es piedra, 2 es papel, 3 es tijera 
 let jugador = 0;
@@ -33,16 +46,8 @@ while ( triunfos < 3 && perdidas < 3 ) {
     alert('Tú eliges: ' + eleccion(jugador));
     alert('PC elige: ' + eleccion(pc));
 
-    // COMBATE
-    if (pc == jugador) {
-        alert('EMPATE')
-    } else if ((jugador == 1 && pc == 3) || (jugador == 2 && pc == 1) || (jugador == 3 && pc == 2)) {   // FIRST, SECOND AND THIRD WIN SCENERY IN JUST ONE CONDITION
-        alert('GANASTE')
-        triunfos = triunfos + 1;
-    } else {    // LOST SCENERY
-        alert('PERDISTE')
-        perdidas = perdidas + 1;
-    }
+    combate(); // COMBATE       
+    
 }
 
 alert('Ganaste ' + triunfos + ' veces. Perdiste ' + perdidas + ' veces.');
