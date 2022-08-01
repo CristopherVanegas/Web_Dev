@@ -22,17 +22,27 @@ function eleccion(jugada) {
 
 // 1 es piedra, 2 es papel, 3 es tijera 
 let jugador = 0;
-let pc = aleatorio(1, 3);   // IT'S NOT NECCESSARY TO CREATE MIN AND MAX VARIABLES BECAUSE THOSE VALUES ARE BEEN CREATED INSIDE THE FUNCTION ONCE I'VE INVOKED THAT.
-jugador = prompt("Elige: 1 para piedra, 2 para papel, 3 para tijera");
+let pc = 0;
+let triunfos = 0;
+let perdidas = 0;
 
-alert('Tú eliges: ' + eleccion(jugador));
-alert('PC elige: ' + eleccion(pc));
+while ( triunfos < 3 && perdidas < 3 ) {
+    pc = aleatorio(1, 3);   // IT'S NOT NECCESSARY TO CREATE MIN AND MAX VARIABLES BECAUSE THOSE VALUES ARE BEEN CREATED INSIDE THE FUNCTION ONCE I'VE INVOKED THAT.
+    jugador = prompt("Elige: 1 para piedra, 2 para papel, 3 para tijera");
 
-// COMBATE
-if (pc == jugador) {
-    alert('EMPATE')
-} else if ((jugador == 1 && pc == 3) || (jugador == 2 && pc == 1) || (jugador == 3 && pc == 2)) {   // FIRST, SECOND AND THIRD WIN SCENERY IN JUST ONE CONDITION
-    alert('GANASTE')
-} else {    // LOST SCENERY
-    alert('PERDISTE')
+    alert('Tú eliges: ' + eleccion(jugador));
+    alert('PC elige: ' + eleccion(pc));
+
+    // COMBATE
+    if (pc == jugador) {
+        alert('EMPATE')
+    } else if ((jugador == 1 && pc == 3) || (jugador == 2 && pc == 1) || (jugador == 3 && pc == 2)) {   // FIRST, SECOND AND THIRD WIN SCENERY IN JUST ONE CONDITION
+        alert('GANASTE')
+        triunfos = triunfos + 1;
+    } else {    // LOST SCENERY
+        alert('PERDISTE')
+        perdidas = perdidas + 1;
+    }
 }
+
+alert('Ganaste ' + triunfos + ' veces. Perdiste ' + perdidas + ' veces.');
