@@ -9,7 +9,20 @@
         <section id="seleccionar-mascota">
             <h2>Elige a tu mascota:</h2>
 
-            MASCOTAS
+            <input type="radio" name="mascota" id="hipodoge" />   <!-- type of inputs: text, number, time, date, radio, checkbox -->
+            <label for="hipodoge">Hipodoge</label> <!-- Indicates what the user it's selecting -->
+
+            <input type="radio" name="mascota" id="capipepo" />   <!-- 'name' attribute identify a gruop of inputs -->
+            <label for="capipepo">Capipepo</label>
+
+            <input type="radio" name="mascota" id="ratigueya" />
+            <label for="ratigueya">Ratigueya</label>
+            <!--
+                MASCOTAS
+                Langostelvis -> Agua y Fuego
+                Tupalcama -> Agua y Tierra
+                Pydos -> Tierra y Fuego
+            -->
 
             <button>Seleccionar</button>
 
@@ -31,6 +44,10 @@
 
         <section id="mensajes">
             <p>Tu mascota atacó con FUEGO, la mascota del enemigo atacó con TIERRA - GANASTE 🎉</p>
+        </section>
+
+        <section id="reiniciar">
+            <button>Reiniciar</button>
         </section>
     </body>
 </html>
