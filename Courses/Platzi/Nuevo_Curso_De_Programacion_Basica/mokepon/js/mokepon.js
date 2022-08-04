@@ -17,15 +17,6 @@ function seleccionarMascotaJugador() {
     } else {
         alert('Selecciona una mascota!')
     }
-
-    /*
-    if ((hipodoge == true) || (capipepo == true) || (ratigueya == true)) {
-        alert('¡SELECCIONASTE TU MASCOTA!')
-    } else {
-        alert('Selecciona una mascota por favor!')
-    }
-    */
-    
 }
 
 
