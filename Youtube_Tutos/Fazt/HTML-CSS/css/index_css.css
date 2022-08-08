@@ -1,0 +1,42 @@
+* {
+    list-style: none;
+    font-family: sans-serif;
+}
+
+.content {
+    border: 1px solid black;
+    width: 50%;
+    margin: 14px auto;
+    border-radius: 15px;
+}
+
+.header {
+    border: 1px solid black;
+    margin: 15px;
+}
+
+.menu {
+    border: 1px solid black;
+    background: #5E4C5A;
+    padding: 5px;
+    text-align: center;
+}
+
+.menu ul {
+    padding: 0;
+}
+
+.menu li {
+    background: white;
+    border-radius: 25px;
+    padding: 5px 20px;
+    margin: 3px 5px;
+    display: inline-block;
+}
+
+.title {
+    text-align: center;
+}
+
+
+
