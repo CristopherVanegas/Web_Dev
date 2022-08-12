@@ -1,0 +1,50 @@
+body{
+    background: #E3E3E3;
+}
+
+.cronometro{
+    display: flex;
+    flex-direction: column;
+}
+
+.botones button{
+    padding: 100px;
+    font-size: 25px;
+}
+
+#hms{
+    align-self: center;
+    font-size: 150px;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+}
+
+.calculos{
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    align-items: center;
+}
+
+#c_tercera, #masa_cuerpo{
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.pedir_datos{
+    margin-top: 18px;
+}
+
+#event_tercera_ley{
+    font-size: 20px;
+    padding: 18px;
+}
+
+input{
+    font-size: 20px;
+    text-align: center;
+}
