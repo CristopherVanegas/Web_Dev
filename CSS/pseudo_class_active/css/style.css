@@ -39,6 +39,11 @@ a:active {
     color: black;
 }
 
+/* a:hover {
+    background-color:rgb(221, 246, 246);
+    color: black;
+} */
+
 footer {
     border-top: 1px solid black;
     padding: 8px;
