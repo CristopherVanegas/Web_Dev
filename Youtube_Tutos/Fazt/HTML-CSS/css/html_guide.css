@@ -1,12 +1,17 @@
+:root {
+    --light-pinked-white: #EDE8EC;
+}
+
 * {
+    box-sizing:border-box;
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style: none;   /* Deletes the bullets and any style for <li> elementes */
     font-family: sans-serif;
 }
 
 body {
-    background: #EDE8EC; /* Background color for body! */
+    background: var(--light-pinked-white); /* Background color for body! */
 }
 
 h1 {
@@ -41,7 +46,6 @@ header, section, footer, aside, nav, article {
     Finally added a color gray to the text and added a series of padding config.
     */
     
-    /* border: 1px solid black; */
     color: gray;
     font: sans-serif 24px;
     border: 1px solid gray;
@@ -60,8 +64,8 @@ header, section, footer, aside, nav, article {
 
 .content {
     background: #F8F7F9;
-    border: 1px solid black;
     width: 70%; /* Width for the webpage */
+    height: 100%;
     margin: 15px auto; /* To center the content */
 }
 
@@ -72,11 +76,11 @@ header, section, footer, aside, nav, article {
 }
 
 .header_1 h1 {
-    padding-top: 30px;
+    padding: 30px;
 }
 
 .header_1 h2 {
-    padding-top: 20px;
+    /* padding-top: 20px; */    /* It's not neccesary because h1 has 30px top and down so it's just needed to add a bottom padding for the h2 or objective of the page. */
     padding-bottom: 30px;
 }
 
@@ -98,7 +102,6 @@ header, section, footer, aside, nav, article {
 .sec h2 {
     margin: -1px;                           /* SET a margin and cover the section's border*/
     padding: 5px;                           /* ADDED a padding to avoid having the text streched */
-    /* border-radius: 15px; */ 
     border-top-left-radius: 15px;           /* ADDED border radious top left */
     border-top-right-radius: 15px;          /* ADDED border radious top right */
 }
@@ -112,41 +115,75 @@ header, section, footer, aside, nav, article {
     text-align: center;
 }
 
+
+/*///////////////////// STYLES FOR MENU BAR /////////////////////*/
+
 .menu {
     background: #5E4C5A;
     padding: 5px;
-    text-align: center;
+    height: 61px
 }
 
-.menu li {
-    list-style: none; /* Deletes the bullets and any style for <li> elementes */
+#home-btn {
+    background-color: var(--light-pinked-white);
+    width: 49px;
+    height: 49px;
+    padding: 3px;
+    border-radius: 10px;
+
+    position: absolute;
+    left: 1%;
+}
+
+#hamburguer_icon {    
+    border-radius: 10px;
+    background-color: var(--light-pinked-white);
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    right: 1%;
+}
+
+#navBar_items {
+    display: flex;
+    justify-content: space-around;
+    margin: 8px auto;
+    width: 50%;
+}
+
+.menu>#navBar_items li {
     background: white; /* White color for background */
     border-radius: 25px; /* The border radiuos for a non-rectangle look */
     padding: 5px 20px; /* This is for the space in the box */ 
     margin: 3px 5px;
     font: bold 14px verdana; /* Text style */
-    display: inline-block; /* To specify the order of the <li> elements to be inline-block */
+    /* display: inline-block; To specify the order of the <li> elements to be inline-block */
 }
 
-.menu a {
+.menu>#navBar_items>li>a {
     text-decoration: none;
     color: black;
 }
 
 .list_of_basic_labels {
+    display: flex;
+    justify-content: space-around;
     border: 1px solid black;
     border-radius: 8px;
-    margin: 8px auto;
+
+    /* To separete from above paragraph */
+    margin: 8px 16px;
     margin-bottom: 32px;
-    width: 41%;
 }
 
 .list_of_basic_labels>ul {
-    margin: 24px;
+    width: 400px;
+    margin: auto 24px;
 }
 
 .list_of_basic_labels>ul>li{
     list-style:disc;
+    margin: 18px 18px;
 }
 
 .list_of_basic_labels>ul>li>.p {
@@ -154,8 +191,6 @@ header, section, footer, aside, nav, article {
 }
 
 .html_structure_wrapper {
-    /* border: 1px solid black; */
-    /* border-radius: 8px; */
     margin-top: 16px;
     margin-bottom: 32px;
 }
@@ -202,8 +237,8 @@ figure {
     border-radius: 15px;
     background: #F8F7F9;
     padding: 5px;
-    margin: 10px;
-    width: 30%;
+    margin: 10px 0px;
+    width: 35%;
     float: right;
 }
 
@@ -222,6 +257,7 @@ figure {
     color: white;
     font: bold verdana;
     clear: both;
+    padding: 15px;
 }
 
 .link {
@@ -241,3 +277,27 @@ figure {
     list-style-type:disc;
 }
 
+
+/*///////////////////// MEDIA QUERY SECTION /////////////////////*/
+
+@media (min-width: 972px) {
+    #hamburguer_icon, #home-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 972px) {
+    .aside, #navBar_items {
+        display: none;
+    }
+    .content, .sec {
+        width: 100%;
+    }
+    .sec {
+        margin: 10px 0px;
+    }
+    picture>#hamburguer_icon {
+        /* display: flex; */
+        justify-content: flex-end;
+    }
+}
