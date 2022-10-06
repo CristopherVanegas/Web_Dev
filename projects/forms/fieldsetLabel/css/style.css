@@ -1,0 +1,14 @@
+center {
+    width: 85%;
+    margin: 14px auto;
+    border: 1px solid black;
+}
+
+.form {
+    margin: 8px;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+}
