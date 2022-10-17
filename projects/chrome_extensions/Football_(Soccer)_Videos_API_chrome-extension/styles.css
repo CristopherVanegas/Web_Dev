@@ -1,0 +1,11 @@
+body {
+    width: 300px;
+}
+
+.container {
+    padding: 8px 12px;
+}
+
+#title {
+    margin-bottom: calc(14.940px + 4px);
+}
