@@ -1,0 +1,11 @@
+{
+    "name": "Football (Soccer) Videos API",
+    "version": "1.0.0",
+    "description": "This is an extension to look up Football (Soccer) Videos API",
+    "manifest_version": 3,
+    "author": "Cristopher Vanegas",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Football (Soccer) Videos API"
+    }
+}
