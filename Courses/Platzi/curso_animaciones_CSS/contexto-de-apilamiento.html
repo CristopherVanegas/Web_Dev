@@ -33,29 +33,35 @@
             /* box-shadow */
             box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
         }
+
+        /* bunny 1 */
         .layer-1 {
             position: absolute;
             z-index: 1;
             height: 450px;
             width: 80px;
-            background: white;
+            /* border: 0.5px solid black; */
+            /* background: rgba(255, 255, 255, 0.3); */
             bottom: 0;
             right: 60px;
-
         }
+
+        /* bunny 2 */
         .layer-2 {
             position: absolute;
             z-index: 2;
             height: 450px;
             width: 80px;
-            background: white;
+            /* background: white; */
             bottom: 0;
             left: 60px;
-
         }
+
+        /* wall 1 */
         .layer-3 {
             position: absolute;
             z-index: 3;
+            border-radius: 23px;
             height: 400px;
             width: 220px;
             background: wheat;
@@ -63,43 +69,57 @@
             right: 0;
             left: 0;
             margin: 0 auto;
+            
+            
         }
+
+        /* bunny 3 */
         .layer-4 {
             position: absolute;
             z-index: 4;
-            background: white;
+            /* background: white; */
             height: 300px;
             width: 80px;
             left: 20px;
             bottom: 0;
         }
+
+        /* wall 2 */
         .layer-5 {
             position: absolute;
             z-index: 5;
+            border-radius: 23px;
             background: wheat;
             height: 250px;
             width: 220px;
             bottom: 0;
             left: 0;
         }
+
+        /* bunny 4 */
         .layer-6 {
             position: absolute;
             z-index: 6;
-            background: white;
+            /* background: white; */
             height: 225px;
             width: 80px;
             right: 25px;
             bottom: 0;
         }
+
+        /* wall 3 */
         .layer-7 {
             position: absolute;
             z-index: 7;
+            border-radius: 23px;
             background: wheat;
             height: 175px;
             width: 220px;
             right: 0;
             bottom: 0;
         }
+
+        /* cloud 1 */
         .layer-8 {
             position: absolute;
             z-index: 8;
@@ -112,6 +132,8 @@
             bottom: 0;
 
         }
+
+        /* cloud 2 */
         .layer-9 {
             position: absolute;
             z-index: 9;
@@ -121,6 +143,8 @@
             left: 0;
             bottom: 0;
         }
+
+        /* cloud 3 */
         .layer-10 {
             position: absolute;
             z-index: 10;
@@ -130,19 +154,173 @@
             right: 0;
             bottom: 0;
         }
+
+        /****************** STYLES FOR BUNNY ******************/
+        .left-ear--outer {
+            background: white;
+            border-radius: 90%;
+            width: 20px;
+            height: 50px;
+            position: absolute;
+            left: 10px;
+        }
+        .right-ear--outer {
+            background: white;
+            border-radius: 90%;
+            width: 20px;
+            height: 50px;
+            position: absolute;
+            right: 10px;
+        }
+        .right-ear--inner {
+            background: pink;
+            border-radius: 90%;
+            width: 10px;
+            height: 50px;
+            position: absolute;
+            right: 15px;
+            top: 8px;
+        }
+        .left-ear--inner {
+            background: pink;
+            border-radius: 90%;
+            width: 10px;
+            height: 50px;
+            position: absolute;
+            left: 15px;
+            top: 8px;
+        }
+        .head {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            height: 80px;
+            width: 100%;
+            margin: 0 auto;
+            top: 30px;
+            left: 0;
+            right: 0;
+        }
+        .head__eye--left {
+            position: absolute;
+            background: gray;
+            border-radius: 50%;
+            width: 4px;
+            height: 4px;
+            top: 15px;
+            left: 30px;
+        }
+        .head__eye--right {
+            position: absolute;
+            background: gray;
+            border-radius: 50%;
+            width: 4px;
+            height: 4px;
+            top: 15px;
+            right: 30px;
+        }
+        
+        /* ************************************************** */
+        /****************** STYLES FOR GRASS ******************/
+        .grass {
+            position: absolute;
+            top: 0;
+            border-top-right-radius: 23px;
+            border-top-left-radius: 23px;
+            height: 18px;
+            width: 100%;
+            background: rgb(127, 170, 120);
+        }
+        .pattern {
+            position: absolute;
+            top: 18px;
+            /* border: 1px solid black; */
+            /* 26 */
+            height: 13px;
+            width: 100%;
+
+            /* linear-gradient for triangle pattern */
+            /* background: linear-gradient(135deg, teal 25%, transparent 25%) -50px 0,
+    linear-gradient(-135deg, teal 25%, transparent 25%) -50px 0,
+    linear-gradient(45deg, teal 25%, transparent 25%); */
+
+            background: linear-gradient(135deg, rgb(127, 170, 120) 25%, transparent 25%) -52px 0,
+                linear-gradient(-135deg, rgb(127, 170, 120) 25%, transparent 25%) -52px 0,
+                linear-gradient(45deg, teal 25%, transparent 25%),
+                linear-gradient(-45deg, teal 25%, transparent 25%);
+            background-size: 25px 25px;
+
+        }
+        /* ************************************************** */
+
     </style>
 </head>
 <body>
     <div class="phone">
-        <div class="layer-1"></div>
-        <div class="layer-2"></div>
-        <div class="layer-3"></div>
-        <div class="layer-4"></div>
-        <div class="layer-5"></div>
-        <div class="layer-6"></div>
-        <div class="layer-7"></div>
+        <!-- Bunny 1 -->
+        <div class="layer-1">
+            <div class="left-ear--outer"></div>
+            <div class="left-ear--inner"></div>
+            <div class="right-ear--outer"></div>
+            <div class="right-ear--inner"></div>
+            <div class="head">
+                <div class="head__eye head__eye--left"></div>
+                <div class="head__eye head__eye--right"></div>
+            </div>
+        </div>
+        <!-- Bunny 2 -->
+        <div class="layer-2">
+            <div class="left-ear--outer"></div>
+            <div class="left-ear--inner"></div>
+            <div class="right-ear--outer"></div>
+            <div class="right-ear--inner"></div>
+            <div class="head">
+                <div class="head__eye head__eye--left"></div>
+                <div class="head__eye head__eye--right"></div>
+            </div>
+        </div>
+        <!-- Wall 1 -->
+        <div class="layer-3">
+            <div class="grass"></div>
+            <div class="pattern"></div>
+        </div>
+        <!-- Bunny 3 -->
+        <div class="layer-4">
+            <div class="left-ear--outer"></div>
+            <div class="left-ear--inner"></div>
+            <div class="right-ear--outer"></div>
+            <div class="right-ear--inner"></div>
+            <div class="head">
+                <div class="head__eye head__eye--left"></div>
+                <div class="head__eye head__eye--right"></div>
+            </div>
+        </div>
+        <!-- Wall 2 -->
+        <div class="layer-5">
+            <div class="grass"></div>
+            <div class="pattern"></div>
+        </div>
+        <!-- Bunny 4 -->
+        <div class="layer-6">
+            <div class="left-ear--outer"></div>
+            <div class="left-ear--inner"></div>
+            <div class="right-ear--outer"></div>
+            <div class="right-ear--inner"></div>
+            <div class="head">
+                <div class="head__eye head__eye--left"></div>
+                <div class="head__eye head__eye--right"></div>
+            </div>
+        </div>
+        <!-- Wall 3 -->
+        <div class="layer-7">
+            <div class="grass"></div>
+            <div class="pattern"></div>
+        </div>
+        <!-- Cloud 1 -->
         <div class="layer-8"></div>
+        <!-- Cloud 2 -->
         <div class="layer-9"></div>
+        <!-- Cloud 3 -->
         <div class="layer-10"></div>
     </div>
 </body>
