@@ -23,9 +23,9 @@
 }
 
 .options {
-    background: dodgerblue;
+    /* background: dodgerblue; */
     z-index: 1;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 10px;
     width: 250px;
     height: 172px;
@@ -44,14 +44,20 @@
 }
 
 .options li {
+    background: dodgerblue;
     list-style: none;
 
     border: 1px solid black;
     border-radius: 10px;
     padding: 10px 0px;
+    padding-left: 35px;
     
     position: inherit;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
 }
 .inactive {
     display: none;
 }
+
