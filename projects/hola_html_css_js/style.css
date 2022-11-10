@@ -1,0 +1,35 @@
+.main {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 565.5px;
+    margin: 15px auto;
+    padding: 32px;
+    height: 150px;
+}
+
+.saludo {
+    text-align: center;
+    margin: 31.25px auto;
+    padding: 16px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: 50px;
+}
+
+#button_wrapper {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 632px;
+    margin: 8px auto;
+}
+.button {
+    margin: 16px;
+    font-size: 20px;
+}
+
+.inactive {
+    display: none;
+}

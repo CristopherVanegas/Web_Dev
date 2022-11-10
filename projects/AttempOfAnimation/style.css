@@ -1,0 +1,68 @@
+/*  IT'S PENDING TO LEARN HOW TO CREATE ANIMATIONS 🤡 */
+
+:root {
+    --dark-dimmed: rgb(28, 28, 28);
+}
+
+.content {
+    margin: 16px auto;
+    width: 700px;
+    height: 700px;
+    border: 1px solid black;
+    background-color: var(--dark-dimmed);
+    border-radius: 15px;
+}
+
+/* h1 {
+    background-color: white;
+    border-radius: 15px;;
+    font: bold 30px sans-serif;
+    width: 210px;
+} */
+
+.wrapper {
+    display: grid;
+    place-items: center;
+    position: relative;
+    height: 70px;
+    width: 210px;
+    background: #191919;
+    border-radius: 10px;
+    overflow:hidden;
+}
+
+
+.wrapper::before {
+    color: white;
+    content: 'A';
+    height: 70px;
+    width: 210px;
+    left: 10px;
+    top: -70px;
+    position: absolute;
+    background:linear-gradient(#00e5ff, #b400fb);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% { transform: rotate(0deg); }
+
+    100% { transform: rotate(360deg); }
+}
+
+.wrapper::after {
+    border-radius: 15px;
+    font: bold 30px sans-serif;
+    width: 210px;
+    content: 'ANIMATION';
+    position: absolute;
+    
+    background: white;
+    inset: 3px;
+    border-radius: 5px;
+}
+
+.wrapper {
+    margin: auto;
+}
+
