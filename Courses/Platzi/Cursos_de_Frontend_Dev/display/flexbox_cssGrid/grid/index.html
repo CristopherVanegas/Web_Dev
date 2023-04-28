@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox y CSS Grid</title>
+    <style>
+        section {
+            background-color: #ddd;
+            border-radius: 10px;
+            width: 550px;
+            padding: 10px;
+            margin: 20px auto;
+        }
+        #container {
+            display: grid;
+            width: 480px;
+            height: 480px;
+            margin: 0px auto;
+            background-color: papayawhip;
+
+            /* crea frames de columnas */
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+
+        #container #item {
+            background: pink;
+        }
+
+        #item:nth-child(1) {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        #item:nth-child(2) {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+        
+        #item:nth-child(3) {
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+        }
+
+        #item:nth-child(4) {
+            grid-column: 4 / 5;
+            grid-row: 4 / 5;
+        }
+
+        #item:nth-child(5) {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+        }
+
+        #item:nth-child(6) {
+            grid-column: 4 / 5;
+            grid-row: 2 / 3;
+        }
+
+        #item:nth-child(7) {
+            grid-column: 2 / 3;
+            grid-row: 4 / 5;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <center>
+            <section>
+            <h2>grid</h2>
+                <p>CSS Grid me sirve para crear grillas y posicionar elementos por medio de coordenadas utilizando grid-column y grid-row (basico)</p>
+                <p>Con grid-template-columns / grid-template-rows puedo crear frames para agregar columna y filas. Ejemplo: grid-template-columns: 1fr 1fr 1fr 1fr;</p>
+            </section>
+        </center>
+        <div id="container">
+            <div id="item"></div>
+            <div id="item"></div>
+            <div id="item"></div>
+            <div id="item"></div>
+            <div id="item"></div>
+            <div id="item"></div>
+            <div id="item"></div>
+        </div>
+    </div>
+</body>
+</html>
