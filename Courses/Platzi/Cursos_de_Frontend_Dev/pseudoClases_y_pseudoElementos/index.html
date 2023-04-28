@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_Pseudoclases y Pseudoelementos</title>
+    <style>
+        #content > h2 {
+            text-align: center;
+        }
+        #content {
+            background-color: antiquewhite;
+            border-radius: 20px;
+            width: 500px;
+            padding: 10px;
+            margin: 10px auto;
+        }
+
+        p {
+            color: salmon;
+        }
+
+        /* Pseudoelementos */
+        p::first-letter {
+            color: teal;
+        }
+
+        p::before {
+            content: "👻 ";
+        }
+
+        p::after {
+            content: " 😃";
+        }
+
+        ::placeholder {
+            color:tomato;
+        }
+
+        #surname::placeholder {
+            color:teal;
+        }
+
+        /* Pseudoclases */
+        p:hover {
+            color: skyblue;
+        }
+        div p:nth-child(2) {
+            color: violet;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="content">
+        <section>
+            <h2>Pseudoclases</h2>
+            <p>Se identifican con :</p>
+            <p>Las Pseudoclases sirven para dar una accion especifica a un elemento como cambiar su color o para seleccionar un elemento en especifico.</p>
+        </section>
+        <section>
+            <h2>Pseudoelementos</h2>
+            <p>Se identifican con ::</p>
+            <p>Los Pseudoelementos sirven para seleccionar elementos especificos como una linea o la primera letra como tambien para agregar un elemento al inicio ::before o despues ::after</p>
+        </section>
+    </div>
+
+    <p>Hola</p>
+    <div>
+        <p>Platzi</p>
+        <p>es</p>
+        <p>lo mejor</p>
+    </div>
+    <input type="text" placeholder="name" id="name">
+    <input type="text" placeholder="surname" id="surname">
+
+</body>
+</html>
