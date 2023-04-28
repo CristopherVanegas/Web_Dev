@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apilamiento-Z_Index</title>
+    <style>
+      div {
+        position: absolute;
+        background: palegoldenrod;
+      }
+      .one {
+        z-index: 5;
+      }
+      .two {
+        z-index: 4;
+      }
+
+      #R {
+        width: 20px;
+        height: 20px;
+        background: red;
+        z-index: 7;
+      }
+      #B {
+        width: 20px;
+        height: 20px;
+        background: blue;
+        z-index: 6;
+      }
+      #Y {
+        width: 20px;
+        height: 20px;
+        background: yellow;
+        z-index: 10;
+        top: -6px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="one">Master</div>
+    <div class="two">Platzi</div> -->
+
+    <section>
+      <div id="R">RED</div>
+      <div id="B">
+        BLUE
+        <div id="Y">YELLOW</div>
+      </div>
+    </section>
+  </body>
+</html>
