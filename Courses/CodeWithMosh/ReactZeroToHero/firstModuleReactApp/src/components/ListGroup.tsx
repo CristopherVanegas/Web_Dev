@@ -5,6 +5,8 @@ function ListGroup() {
 
   // Hook
   const [selectedItem, setSelectedIndex] = useState(-1);
+  // the first elemente is a variable(selectedIndex)
+  // the second is an updater function
 
   if (list.length == 0)
     return (
@@ -27,7 +29,7 @@ function ListGroup() {
                 : "list-group-item"
             }
             key={item}
-            onClick={() => setSelectedIndex(index)}
+            onClick={() => setSelectedIndex(index)} // onClick it uses the setSelectedIndex to update the selectedIndex
           >
             {item}
           </li>
