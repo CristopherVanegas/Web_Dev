@@ -1,14 +1,15 @@
+import { useState } from "react";
+import Alert from "./components/Alert";
 import Button from "./components/Button";
 import reactIconInAnHexagon from "./images/react-icon-in-a-hexagon-vector.jpg"
 
-const handleClick = (msg: string) => {
-  console.log(msg);
-} // creates a handle event function that receives a string parameter and then it console.log that item
 
 function App() {
+  const [alertVisible, setAlertVisibility] = useState(false);
   return (
     <>
-      <Button Label="Reusable Button" color="dark" onClick={handleClick}>
+      { alertVisible && <Alert onClose={() => setAlertVisibility(false)}>My alert!</Alert> }
+      <Button Label="Reusable Button" color="dark" onClick={() => setAlertVisibility(true)}>
         <img
           src={reactIconInAnHexagon}
           alt="ReactJS-Icon"
