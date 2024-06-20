@@ -1,12 +1,16 @@
 import { useState } from "react";
 
-function ListGroup() {
-  const items = ["New York", "Guayaquil", "Medellin", "Toronto", "Tokyo"];
-  const [selectedIndex, setSelectedIndex] = useState(-1)    // Hook
+// To define the shape or input for a component
+interface Props {
+    items: string[];
+    heading: string;
+}
 
+function ListGroup({ items, heading }: Props) {
+  const [selectedIndex, setSelectedIndex] = useState(-1)    // Hook
   return (
     <>
-      <h1>List</h1>
+      <h1>{heading}</h1>
       {/* {items.length === 0 ? <p>No item found</p> : null} */}
       {items.length === 0 && <p>No item found</p>}
       <ul className="list-group">
