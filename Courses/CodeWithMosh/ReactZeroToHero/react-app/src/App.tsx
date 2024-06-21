@@ -1,4 +1,4 @@
-import Contador from "./Components/Contador/Contador";
+import Alert from "./Components/Alert/Alert";
 import ListGroup from "./Components/ListGroup/ListGroup";
 
 function App() {
@@ -7,8 +7,11 @@ function App() {
 
   return (
     <div>
-      <ListGroup items={items} heading="List of Cities" onSelectItem={handleSelectItem} />
-      <Contador></Contador>
+      <Alert>
+        <>
+          <ListGroup items={items} heading="Cities" onSelectItem={handleSelectItem} />
+        </>
+      </Alert>
     </div>
   );
 }
