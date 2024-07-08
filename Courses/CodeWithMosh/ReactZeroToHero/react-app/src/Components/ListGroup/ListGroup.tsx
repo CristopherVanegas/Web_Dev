@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './ListGroup.css'
 
 // To define the shape or input for a component
 interface Props {
