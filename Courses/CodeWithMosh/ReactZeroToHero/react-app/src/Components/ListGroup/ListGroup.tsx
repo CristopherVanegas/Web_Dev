@@ -1,5 +1,22 @@
 import { useState } from "react";
-import styles from './ListGroup.module.css'
+import styled from 'styled-components';
+
+// styled-component for ul
+const List = styled.ul `
+  list-style: none;
+  padding: 0;
+`;
+
+// styled-component for li
+const ListItem = styled.li<ListItemProp> ` 
+  padding: 5px 0;
+  background: ${ props => props.active ? 'cyan' : 'none'};
+`;
+
+// Prop of type boolean to follow the state
+interface ListItemProp {
+  active: boolean;
+}
 
 // To define the shape or input for a component
 interface Props {
@@ -9,20 +26,16 @@ interface Props {
 }
 
 function ListGroup({ items, heading, onSelectItem}: Props) {
-  const [selectedIndex, setSelectedIndex] = useState(-1); // Hook
+  const [selectedIndex, setSelectedIndex] = useState(0); // Hook
   return (
     <>
       <h1>{heading}</h1>
       {/* {items.length === 0 ? <p>No item found</p> : null} */}
       {items.length === 0 && <p>No item found</p>}
-      <ul className={[styles.ListGroup, styles.container].join(' ')}>
+      <List>
         {items.map((item, index) => (
-          <li
-            className={
-              selectedIndex === index
-                ? "list-group-item active"
-                : "list-group-item"
-            }
+          <ListItem
+            active={selectedIndex === index}
             key={item}
             onClick={() => {
               setSelectedIndex(index);
@@ -30,9 +43,9 @@ function ListGroup({ items, heading, onSelectItem}: Props) {
             }}
           >
             {item}
-          </li>
+          </ListItem>
         ))}
-      </ul>
+      </List>
     </>
   );
 }
