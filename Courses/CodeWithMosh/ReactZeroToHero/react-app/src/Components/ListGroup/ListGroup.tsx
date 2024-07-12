@@ -25,6 +25,7 @@ interface Props {
   onSelectItem: (item: string) => void;
 }
 
+// ListGroup react functional component
 function ListGroup({ items, heading, onSelectItem}: Props) {
   const [selectedIndex, setSelectedIndex] = useState(0); // Hook
   return (
