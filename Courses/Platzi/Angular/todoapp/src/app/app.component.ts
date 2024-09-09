@@ -1,23 +1,13 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Welcome';
-  tasks = [
-    'Instalar el Angular CLI',
-    'Crear proyecto',
-    'Crear componentes'
-  ]
-  importNg = [
-    'import { CommonModule } from \'@angular/common\';',
-    'imports: [RouterOutlet, CommonModule],'
-  ]
+  
 }
