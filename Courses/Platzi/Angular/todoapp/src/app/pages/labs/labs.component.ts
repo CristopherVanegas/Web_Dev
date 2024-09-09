@@ -19,4 +19,6 @@ export class LabsComponent {
     'import { CommonModule } from \'@angular/common\';',
     'imports: [RouterOutlet, CommonModule],'
   ]
+  name:string = 'Cristopher';
+  age:number = 20;
 }
