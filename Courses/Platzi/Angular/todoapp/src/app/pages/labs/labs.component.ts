@@ -33,4 +33,12 @@ export class LabsComponent {
     age: this.age,
     avatar: 'https://boomboomnaturals.com/cdn/shop/articles/nice_person.png?v=1625170708',
   }
+
+  clickHandler(): void {
+    alert("Click");
+  }
+
+  onChange(event: Event): void {
+    console.log(event)
+  }
 }

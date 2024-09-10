@@ -1,40 +1,50 @@
-<h1>Hola, este es mi primer proyecto Angular</h1>
-<h2> {{ title }} </h2>
-<ul>
-  <li *ngFor="let task of tasks">
-    {{task}}
-  </li>
-</ul>
-<section class="border-top">
-  <h2>*ngFor</h2>
-  <p>*ngFor pertenece a una directiva de control y para utilizarlo en el componente es necesario importarlo desde el .ts
-    como: </p>
-  <ul>
-    <li *ngFor="let i of importNg">{{i}}</li>
-  </ul>
-</section>
+<div class="container">
+    <h1>Hola, este es mi primer proyecto Angular</h1>
+    <h2> {{ title }} </h2>
+    <ul>
+        <li *ngFor="let task of tasks">
+            {{task}}
+        </li>
+    </ul>
+    <section class="border-top">
+        <h2>*ngFor</h2>
+        <p>*ngFor pertenece a una directiva de control y para utilizarlo en el componente es necesario importarlo desde
+            el .ts
+            como: </p>
+        <ul>
+            <li *ngFor="let i of importNg">{{i}}</li>
+        </ul>
+    </section>
 
-<hr>
-<section>
-    <h2>{{ 'Hey'.repeat(5) }}</h2>
-    <p>La suma de 3 + 3 es {{ 3 +  3 }}</p>
-    <p>Hey, mi nombre es <strong>{{ name }}</strong> y mi edad es de <strong>{{ age }}</strong></p>
-</section>
+    <hr>
+    <section>
+        <h2>{{ 'Hey'.repeat(5) }}</h2>
+        <p>La suma de 3 + 3 es {{ 3 + 3 }}</p>
+        <p>Hey, mi nombre es <strong>{{ name }}</strong> y mi edad es de <strong>{{ age }}</strong></p>
+    </section>
 
-<hr>
+    <hr>
 
-<h2>Property Binding</h2>
-<img [src]="imgSrc" [alt]="alt">
-<input type="text" [value]="value">
-<button [disabled]="disabled">{{ btnValue }}</button>
+    <h2>Property Binding</h2>
+    <img [src]="imgSrc" [alt]="alt">
+    <input type="text" [value]="value">
+    <button [disabled]="disabled">{{ btnValue }}</button>
 
-<hr>
-<h3>Person Data</h3>
-<ul>
-    <li>Person name: {{ person.name }}</li>
-    <li>Person age: {{ person.age }} </li>
-    <li>
-        Person img:
-        <img [src]="person.avatar" alt="Person img">
-    </li>
-</ul>
+    <hr>
+    <h3>Person Data</h3>
+    <ul>
+        <li>Person name: {{ person.name }}</li>
+        <li>Person age: {{ person.age }} </li>
+        <li>
+            Person img:
+            <img [src]="person.avatar" alt="Person img">
+        </li>
+    </ul>
+
+    <hr>
+    <button (click)="clickHandler()">Click me!</button>
+    <button (dblclick)="clickHandler()">Double Click me!</button>
+
+    <h3>Evento (change)</h3>
+    <input type="number" (change)="onChange($event)">
+</div>
