@@ -21,4 +21,16 @@ export class LabsComponent {
   ]
   name:string = 'Cristopher';
   age:number = 20;
+
+  // Input properties //
+  imgSrc:string = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/220px-Image_created_with_a_mobile_phone.png"
+  alt:string = "Blue sky and person taking a photo"
+  value:string = 'Type your name';
+  disabled = false;
+  btnValue = 'Click me!'
+  person = {
+    name: this.name,
+    age: this.age,
+    avatar: 'https://boomboomnaturals.com/cdn/shop/articles/nice_person.png?v=1625170708',
+  }
 }

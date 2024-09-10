@@ -15,9 +15,26 @@
 </section>
 
 <hr>
-
 <section>
     <h2>{{ 'Hey'.repeat(5) }}</h2>
     <p>La suma de 3 + 3 es {{ 3 +  3 }}</p>
     <p>Hey, mi nombre es <strong>{{ name }}</strong> y mi edad es de <strong>{{ age }}</strong></p>
 </section>
+
+<hr>
+
+<h2>Property Binding</h2>
+<img [src]="imgSrc" [alt]="alt">
+<input type="text" [value]="value">
+<button [disabled]="disabled">{{ btnValue }}</button>
+
+<hr>
+<h3>Person Data</h3>
+<ul>
+    <li>Person name: {{ person.name }}</li>
+    <li>Person age: {{ person.age }} </li>
+    <li>
+        Person img:
+        <img [src]="person.avatar" alt="Person img">
+    </li>
+</ul>
