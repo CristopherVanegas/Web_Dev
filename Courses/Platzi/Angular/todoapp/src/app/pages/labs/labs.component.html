@@ -47,4 +47,13 @@
 
     <h3>Evento (change)</h3>
     <input type="number" (change)="onChange($event)">
+
+    <h3>Evento (keydown)</h3>
+    <input type="text" [value]="person.name" (change)="onChange($event)">
+
+    <h3>Evento (keydown)</h3>
+    <input type="text" [value]="person.name" (keydown)="keydownHandler($event)">
+
+    <h3>Evento (keydown.shift.t)</h3>
+    <input type="text" [value]="person.name" (keydown.shift.t)="clickHandler()">
 </div>
