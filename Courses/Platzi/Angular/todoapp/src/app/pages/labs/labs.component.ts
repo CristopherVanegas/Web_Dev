@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Signal, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -19,7 +19,7 @@ export class LabsComponent {
     'import { CommonModule } from \'@angular/common\';',
     'imports: [RouterOutlet, CommonModule],'
   ]
-  name:string = 'Cristopher';
+  name = signal('Cristopher');
   age:number = 20;
 
   // Input properties //
@@ -29,7 +29,7 @@ export class LabsComponent {
   disabled = false;
   btnValue = 'Click me!'
   person = {
-    name: this.name,
+    name: this.name(),
     age: this.age,
     avatar: 'https://boomboomnaturals.com/cdn/shop/articles/nice_person.png?v=1625170708',
   }
@@ -38,12 +38,19 @@ export class LabsComponent {
     alert("Click");
   }
 
-  onChange(event: Event): void {
-    console.log(event)
-  }
-
   keydownHandler(event: KeyboardEvent) {
     const input = event.target as HTMLInputElement;
+    console.log(input.value);
+  }
+
+  onChange(event:Event): void {
+    console.log(event);
+  }
+
+  onSignal(event: Event): void {
+    const input = event.target as HTMLInputElement;
+    const newValue = input.value;
+    this.name.set(newValue);
     console.log(input.value);
   }
 }

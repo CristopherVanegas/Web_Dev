@@ -20,7 +20,7 @@
     <section>
         <h2>{{ 'Hey'.repeat(5) }}</h2>
         <p>La suma de 3 + 3 es {{ 3 + 3 }}</p>
-        <p>Hey, mi nombre es <strong>{{ name }}</strong> y mi edad es de <strong>{{ age }}</strong></p>
+        <p>Hey, mi nombre es <strong>{{ name() }}</strong> y mi edad es de <strong>{{ age }}</strong></p>
     </section>
 
     <hr>
@@ -47,13 +47,15 @@
 
     <h3>Evento (change)</h3>
     <input type="number" (change)="onChange($event)">
-
-    <h3>Evento (keydown)</h3>
-    <input type="text" [value]="person.name" (change)="onChange($event)">
-
+    
     <h3>Evento (keydown)</h3>
     <input type="text" [value]="person.name" (keydown)="keydownHandler($event)">
 
     <h3>Evento (keydown.shift.t)</h3>
     <input type="text" [value]="person.name" (keydown.shift.t)="clickHandler()">
+
+    <hr>
+    <h3>Signals</h3>
+    <input type="text" [value]="name()" (change)="onSignal($event)">
+    <p>Mi nombre es: {{ name() }}</p>
 </div>
