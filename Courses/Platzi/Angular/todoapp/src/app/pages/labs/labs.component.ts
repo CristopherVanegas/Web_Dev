@@ -10,11 +10,11 @@ import { CommonModule } from '@angular/common';
 })
 export class LabsComponent {
   title = 'Welcome';
-  tasks = [
+  tasks = signal([
     'Instalar el Angular CLI',
     'Crear proyecto',
     'Crear componentes'
-  ]
+  ])
   importNg = [
     'import { CommonModule } from \'@angular/common\';',
     'imports: [RouterOutlet, CommonModule],'
